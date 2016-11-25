@@ -11,7 +11,7 @@ This is an `boiler plate` for angular 1.x projects, which can be used to build s
 * bower
 * grunt
 
-##How to use:
+## Setup:
 
 1)Cone the project in to your local directory.Then move to that directory from terminal.
 
@@ -35,4 +35,10 @@ This will install the all the libraries  listed in the  `bower.json` file
 
 The application will run at the port 8000
 
+##  Build production version:
+
+
+`grunt build `
+
+This will create a production ready code in `dist' folder
 
