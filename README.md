@@ -40,5 +40,5 @@ The application will run at the port 8000
 
 `grunt build `
 
-This will create a production ready code in `dist' folder
+This will create a production ready code in `dist` folder
 
