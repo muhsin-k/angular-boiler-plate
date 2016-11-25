@@ -1,9 +1,9 @@
 {
-    "name": "ssr",
-    "description": "Self-Study Report NAAC",
+    "name": "angular-boiler-plate",
+    "description": "Boiler plate for angular 1.x projects",
     "main": "",
     "authors": [
-        "Pranav"
+        "Muhsin.K"
     ],
     "license": "ISC",
     "moduleType": [],
