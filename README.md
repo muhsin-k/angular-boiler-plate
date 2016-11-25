@@ -21,9 +21,11 @@ This is an `boiler plate` for angular 1.x projects, which can be used to build s
 
 This will install the all the modules listed in the  `package.json` file
 
-2)Intall all bower components
+2)Install all bower components
 
 `bower install `
+
+This will install the all the libraries  listed in the  `bower.json` file
 
 3)Run the project
 
