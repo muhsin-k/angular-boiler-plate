@@ -1,0 +1,113 @@
+<div class="dashboard">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tileheader ">Total </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tilecontent">16</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tileheader ">Present</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tilecontent"> 12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tileheader ">Absent</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tilecontent"> 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tileheader ">Referies</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tilecontent">3 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:15px;">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="sales-report">Total Report</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="tilecontent" style="height:583px;">
+                            <div class="row sales-report-headings">
+                                <div class="col-md-3">Name</div>
+                                <div class="col-md-3">Present</div>
+                                <div class="col-md-3">Absent</div>
+                                <div class="col-md-3">Date</div>
+                            </div>
+                            <div class="row sales-report-items " ng-repeat="item in allServices track by $index">
+                                <div class="col-md-3">{{item.name}}</div>
+                                <div class="col-md-3">{{item.present}}</div>
+                                <div class="col-md-3">{{item.absent}}</div>
+                                <div class="col-md-3">{{item.updatedAt|date:'dd/MM/yyyy '}}</div>
+                                <span am-time-ago="item.updatedAt | amParse:'YYYY.MM.DD HH:mm:ss'"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class=" " style="    background: white;
+    height: 50px;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+    font-size: 18px;
+    color: #7f7d7d;">Graph reports</div>
+                        </div>
+                    </div>
+                    <div class=" " style="    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: #7f7d7d;">
+                        <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options" height="225" width="225" style="    margin: 0 auto;">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

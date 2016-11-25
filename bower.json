@@ -1,0 +1,40 @@
+{
+    "name": "ssr",
+    "description": "Self-Study Report NAAC",
+    "main": "",
+    "authors": [
+        "Pranav"
+    ],
+    "license": "ISC",
+    "moduleType": [],
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular-translate": "2.8.1",
+        "bootstrap": "3.3.6",
+        "angular-ui-router": "0.2.15",
+        "angular-messages": "1.4.9",
+        "checklist-model": "0.9.0",
+        "angular-bootstrap": "2.1.4",
+        "ng-ckeditor": "0.2.1",
+        "angular-chart.js": "1.0.3",
+        "angular-sanitize": "1.5.8",
+        "fontawesome": "4.7.0"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/js/bootstrap.js",
+                "dist/css/bootstrap.css",
+                "less/bootstrap.less"
+            ]
+        }
+    }
+}
